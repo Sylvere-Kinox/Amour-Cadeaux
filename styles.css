@@ -1,0 +1,5 @@
+/* styles.css - Main stylesheet */
+/* This file imports the minified version for production */
+/* For development, styles-custom.css provides the detailed styles */
+
+@import url('styles-custom.css');

@@ -1,0 +1,21 @@
+User-agent: *
+Allow: /
+
+# Autoriser l'indexation des images pour le SEO
+Allow: /images/
+
+# Fichiers importants pour le SEO
+Allow: /sitemap.xml
+Allow: /manifest.json
+
+# Bloquer les dossiers temporaires (si existants)
+Disallow: /temp/
+Disallow: /tmp/
+Disallow: /cache/
+Disallow: /scripts/
+
+# Délai entre les visites pour éviter la surcharge
+Crawl-delay: 1
+
+# Sitemap principal
+Sitemap: https://example.com/sitemap.xml

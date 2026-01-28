@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Vos Angoisses Résolvées | Amour & Cadeaux</title>
+    <meta name="description" content="Toutes vos questions d'angoisse Saint-Valentin résolues. Budget, livraison, taille, qualité... on répond à tout.">
+     <link rel="icon" type="image/png" href="images/Logo.png">
+    <meta name="theme-color" content="#e91e63">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.min.css">
+    <link rel="stylesheet" href="styles-custom.css">
+    <style>
+        .gradient-text { background: linear-gradient(135deg, #ff1493, #ff69b4, #ffc0cb); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    </style>
+    <script src="config.js"></script>
+</head>
+<body class="bg-black text-white overflow-x-hidden">
+    <div class="site-topline bg-gradient-to-r from-red-600 via-pink-600 to-rose-600 text-white text-center py-2 text-sm font-bold">
+         FAQ | Les Réponses Que Vous Attendiez
+    </div>
+
+    <header class="bg-slate-900 border-b-4 border-pink-600 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between h-20">
+            <a href="index.html" class="text-3xl font-black">
+                <span class="gradient-text"> AMOUR</span><span class="text-white">&CADEAUX</span>
+            </a>
+            <nav class="hidden md:block">
+                <div class="flex items-center space-x-6">
+                    <a href="top10.html" class="text-slate-300 hover:text-pink-400 font-bold transition-colors text-sm uppercase">Top 10</a>
+                    <a href="guide.html" class="text-slate-300 hover:text-pink-400 font-bold transition-colors text-sm uppercase">Guide</a>
+                    <a href="faq.html" class="text-pink-400 font-bold text-sm uppercase"> FAQ</a>
+                </div>
+            </nav>
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden text-white p-2" id="mobile-menu-btn" aria-label="Menu">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="md:hidden bg-slate-800 border-t border-pink-500/30 hidden" id="mobile-menu">
+            <div class="px-6 py-4 space-y-4">
+                <a href="index.html" class="block text-pink-300 hover:text-pink-100 font-bold py-2 border-b border-pink-500/20">Accueil</a>
+                <a href="top10.html" class="block text-slate-300 hover:text-slate-100 font-bold py-2 border-b border-slate-500/20">⭐ Top 10</a>
+                <a href="guide.html" class="block text-slate-300 hover:text-slate-100 font-bold py-2 border-b border-slate-500/20">📚 Guide</a>
+                <a href="faq.html" class="block text-pink-300 hover:text-pink-100 font-bold py-2 border-b border-pink-500/20">❓ FAQ</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-6 py-16">
+        <header class="text-center mb-16">
+            <h1 class="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-black text-white mb-6">
+                <span class="gradient-text">Vos Angoisses</span><br>
+                <span class="text-white">Résolvées</span>
+            </h1>
+            <p class="text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed font-bold">
+                Vous avez des doutes ? On répond à TOUT. Budget, livraison, taille, qualité... <br>
+                <span class="text-yellow-400">Zéro stress garanti.</span>
+            </p>
+        </header>
+
+        <!-- FAQ Accordion -->
+        <div class="max-w-4xl mx-auto space-y-4">
+            <!-- Question 1 -->
+            <div class="bg-gradient-to-r from-slate-800 to-slate-900 rounded-2xl border-2 border-pink-600/50 overflow-hidden hover:border-pink-400 transition-all">
+                <button class="faq-toggle w-full text-left px-8 py-6 font-black text-white text-lg flex justify-between items-center hover:bg-pink-900/20 transition">
+                    <span> Quel budget pour NE PAS PARAÎTRE CHEAP ?</span>
+                    <span class="text-2xl text-pink-400">+</span>
+                </button>
+                <div class="faq-content hidden px-8 pb-6 text-slate-300 border-t border-slate-700">
+                    <p class="font-bold mb-4">L'argent ≠ sincérité. Un cadeau de 26€ bien choisi paraît 200€ si tu as mis de l'intention dedans.</p>
+                    <div class="bg-slate-700/50 rounded-lg p-4 space-y-3 mt-4">
+                        <div class="border-l-4 border-pink-500 pl-4">
+                            <p class="text-pink-300 font-bold"> MOINS DE 30€</p>
+                            <p class="text-sm">Fonctionne = bijou symbolique, belle bougie, parfum haut-de-gamme + bonne présentation</p>
+                        </div>
+                        <div class="border-l-4 border-purple-500 pl-4">
+                            <p class="text-purple-300 font-bold"> 30-100€</p>
+                            <p class="text-sm">La "zone de confiance" = bijou semi-précieux, accessoire marque connue, expérience</p>
+                        </div>
+                        <div class="border-l-4 border-blue-500 pl-4">
+                            <p class="text-blue-300 font-bold"> 100€+</p>
+                            <p class="text-sm">Pour vraiment marquer = montre, bracelet or/argent, électronique premium</p>
+                        </div>
+                    </div>
+                    <p class="mt-4 text-yellow-400 font-black"> SECRET : L'intention (lettre + présentation) multiplies l'impact par 3</p>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="bg-gradient-to-r from-slate-800 to-slate-900 rounded-2xl border-2 border-blue-600/50 overflow-hidden hover:border-blue-400 transition-all">
+                <button class="faq-toggle w-full text-left px-8 py-6 font-black text-white text-lg flex justify-between items-center hover:bg-blue-900/20 transition">
+                    <span> JE DOIS COMMANDER QUAND POUR ÊTRE SÛR ?</span>
+                    <span class="text-2xl text-blue-400">+</span>
+                </button>
+                <div class="faq-content hidden px-8 pb-6 text-slate-300 border-t border-slate-700">
+                    <p class="font-bold mb-4">Voici les deadlines RÉELLES (pas du stress) :</p>
+                    <div class="bg-slate-700/50 rounded-lg p-4 space-y-3 mt-4">
+                        <div class="flex gap-3">
+                            <span class="text-2xl"></span>
+                            <div>
+                                <p class="text-white font-black">AVANT 10 FÉV - ZÉRO STRESS</p>
+                                <p class="text-sm">Tous les cadeaux Standard livré à temps. Même personnalisés.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-3">
+                            <span class="text-2xl"></span>
+                            <div>
+                                <p class="text-yellow-300 font-black">10-13 FÉV - CALCULÉ</p>
+                                <p class="text-sm">Amazon Prime 24h ou Colissimo Express. Faut que tu regardes bien les délais vendeur.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-3">
+                            <span class="text-2xl"></span>
+                            <div>
+                                <p class="text-red-300 font-black">APRÈS 13 FÉV - RISQUÉ</p>
+                                <p class="text-sm">Peut arriver tard. Pense à un Plan B (bougie + lettre = sauvetage acceptable).</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="bg-gradient-to-r from-slate-800 to-slate-900 rounded-2xl border-2 border-purple-600/50 overflow-hidden hover:border-purple-400 transition-all">
+                <button class="faq-toggle w-full text-left px-8 py-6 font-black text-white text-lg flex justify-between items-center hover:bg-purple-900/20 transition">
+                    <span> COMBIEN DE TEMPS POUR UNE GRAVURE/PERSO ?</span>
+                    <span class="text-2xl text-purple-400">+</span>
+                </button>
+                <div class="faq-content hidden px-8 pb-6 text-slate-300 border-t border-slate-700">
+                    <p class="font-bold mb-4">Les délais varient. Voici les réalités :</p>
+                    <div class="bg-slate-700/50 rounded-lg p-4 space-y-3 mt-4">
+                        <div class="border-l-4 border-purple-400 pl-4">
+                            <p class="text-purple-300 font-bold"> GRAVURE SIMPLE (lettres/initiales)</p>
+                            <p class="text-sm">3-5 jours. Commande avant le <span class="text-yellow-300 font-black">10 février</span></p>
+                        </div>
+                        <div class="border-l-4 border-purple-400 pl-4">
+                            <p class="text-purple-300 font-bold"> PHOTO PERSONNALISÉE</p>
+                            <p class="text-sm">5-7 jours. Commande avant le <span class="text-yellow-300 font-black">8 février</span></p>
+                        </div>
+                        <div class="border-l-4 border-purple-400 pl-4">
+                            <p class="text-purple-300 font-bold"> GRAVURE COMPLEXE/MULTI-ÉTAPES</p>
+                            <p class="text-sm">7-10 jours. Commande avant le <span class="text-yellow-300 font-black">4-5 février</span></p>
+                        </div>
+                    </div>
+                    <p class="mt-4 text-pink-300 font-bold"> Vérifiez TOUJOURS les délais exact du vendeur avant de valider.</p>
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="bg-gradient-to-r from-slate-800 to-slate-900 rounded-2xl border-2 border-yellow-600/50 overflow-hidden hover:border-yellow-400 transition-all">
+                <button class="faq-toggle w-full text-left px-8 py-6 font-black text-white text-lg flex justify-between items-center hover:bg-yellow-900/20 transition">
+                    <span> BIJOUX: OR, ARGENT, OU PLAQUÉ ?</span>
+                    <span class="text-2xl text-yellow-400">+</span>
+                </button>
+                <div class="faq-content hidden px-8 pb-6 text-slate-300 border-t border-slate-700">
+                    <p class="font-bold mb-4">C'est LA question d'angoisse. Réponse sincère :</p>
+                    <div class="bg-slate-700/50 rounded-lg p-4 space-y-3 mt-4">
+                        <div class="border-l-4 border-yellow-400 pl-4">
+                            <p class="text-yellow-300 font-black"> ARGENT 925 (le choix sûr)</p>
+                            <p class="text-sm">Durable, pas d'allergie, prix acceptable (30-100€), reconnaissable. C'est le classique pour une raison.</p>
+                        </div>
+                        <div class="border-l-4 border-yellow-400 pl-4">
+                            <p class="text-yellow-300 font-black"> OR 750 (le luxe)</p>
+                            <p class="text-sm">Éternel, précieux, mais cher (150€+). Reserve pour vraiment marquer l'occasion.</p>
+                        </div>
+                        <div class="border-l-4 border-red-500 pl-4">
+                            <p class="text-red-300 font-black"> PLAQUÉ OR (piège)</p>
+                            <p class="text-sm">Paraît beau mais s'usure vite (6-12 mois). Elle/il remarquera l'usure = déception.</p>
+                        </div>
+                    </div>
+                    <p class="mt-4 text-blue-300 font-bold"> Pour petits budgets : argent 925 bas-de-gamme > or plaqué haut-de-gamme. C'est plus durable.</p>
+                </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="bg-gradient-to-r from-slate-800 to-slate-900 rounded-2xl border-2 border-green-600/50 overflow-hidden hover:border-green-400 transition-all">
+                <button class="faq-toggle w-full text-left px-8 py-6 font-black text-white text-lg flex justify-between items-center hover:bg-green-900/20 transition">
+                    <span> ELLE/IL VA AIMER LA TAILLE ?</span>
+                    <span class="text-2xl text-green-400">+</span>
+                </button>
+                <div class="faq-content hidden px-8 pb-6 text-slate-300 border-t border-slate-700">
+                    <p class="font-bold mb-4">Angoisse #1 = "et si c'est pas la bonne taille ?" Rassurance :</p>
+                    <div class="bg-slate-700/50 rounded-lg p-4 space-y-3 mt-4">
+                        <div class="flex gap-3">
+                            <span class="text-2xl"></span>
+                            <div>
+                                <p class="text-white font-black">CHERCHE DES INDICES</p>
+                                <p class="text-sm">Regarde ce qu'elle/il porte maintenant. Tour de poignet ? Pointure ? Peut même demander subtilement.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-3">
+                            <span class="text-2xl"></span>
+                            <div>
+                                <p class="text-white font-black">VÉRIFIEZ LA POLITIQUE RETOUR</p>
+                                <p class="text-sm">Amazon = 30 jours de retour gratuit. Phew ! Le pire des cas = elle renégocie la taille.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-3">
+                            <span class="text-2xl"></span>
+                            <div>
+                                <p class="text-white font-black">ÉVITE LES TAILLES EXTRÊMES</p>
+                                <p class="text-sm">Vague = mieux. Une ceinture élastique plutôt qu'un pantalon exact. Un bijou ajustable plutôt que rigide.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="bg-gradient-to-r from-slate-800 to-slate-900 rounded-2xl border-2 border-red-600/50 overflow-hidden hover:border-red-400 transition-all">
+                <button class="faq-toggle w-full text-left px-8 py-6 font-black text-white text-lg flex justify-between items-center hover:bg-red-900/20 transition">
+                    <span> J'AI OUBLIÉ / J'ARRIVE TROP TARD ?</span>
+                    <span class="text-2xl text-red-400">+</span>
+                </button>
+                <div class="faq-content hidden px-8 pb-6 text-slate-300 border-t border-slate-700">
+                    <p class="font-bold mb-4">On va te sauver. Voici le Plan B qui marche :</p>
+                    <div class="bg-slate-700/50 rounded-lg p-4 space-y-4 mt-4">
+                        <div class="bg-red-900/50 p-4 rounded-lg border-l-4 border-red-400">
+                            <p class="text-red-300 font-black text-lg mb-2">JOUR MÊME (14 février)</p>
+                            <ul class="space-y-2 text-sm">
+                                <li> <span class="text-white font-bold">Bougie haut-de-gamme</span> + Jolie carte</li>
+                                <li> <span class="text-white font-bold">Parfum</span> à base de musc/floral (impossible de se tromper)</li>
+                                <li> <span class="text-white font-bold">Chocolats premium</span> (Lindt, Leonidas, Godiva)</li>
+                                <li> <span class="text-white font-bold">Soin visage/masque</span> marque connue</li>
+                            </ul>
+                        </div>
+                        <div class="bg-red-900/50 p-4 rounded-lg border-l-4 border-orange-400">
+                            <p class="text-orange-300 font-black text-lg mb-2">PLAN C: L'ÉMOTION PURE</p>
+                            <p class="text-sm">Lettre sincère + petit cadeau = parfois créer plus d'émotion que gros cadeau stressé. Honnête = "j'ai oublié mais tu le savais, voici ma compensation "</p>
+                        </div>
+                    </div>
+                    <p class="mt-4 text-yellow-300 font-bold"> NE PAS : Acheter le truc le plus cher en panique. Ça se voit.</p>
+                </div>
+            </div>
+
+            <!-- Question 7 -->
+            <div class="bg-gradient-to-r from-slate-800 to-slate-900 rounded-2xl border-2 border-rose-600/50 overflow-hidden hover:border-rose-400 transition-all">
+                <button class="faq-toggle w-full text-left px-8 py-6 font-black text-white text-lg flex justify-between items-center hover:bg-rose-900/20 transition">
+                    <span> C'EST MIEUX DE COMBIEN POUR ÉTONNER ?</span>
+                    <span class="text-2xl text-rose-400">+</span>
+                </button>
+                <div class="faq-content hidden px-8 pb-6 text-slate-300 border-t border-slate-700">
+                    <p class="font-bold mb-4">La vraie astuce pour créer de la surprise :</p>
+                    <div class="space-y-4">
+                        <div class="bg-slate-700/50 p-4 rounded-lg">
+                            <p class="text-rose-300 font-black mb-2"> CHERCHE QUELQUE CHOSE QU'ELLE/IL NE S'ATTENDAIT PAS À AIMER</p>
+                            <p class="text-sm">Si elle aime les montres = pense au-delà (bracelet coordonné ? Étui protection ? Montre originale pas mainstream ?)</p>
+                        </div>
+                        <div class="bg-slate-700/50 p-4 rounded-lg">
+                            <p class="text-rose-300 font-black mb-2"> LE FACTEUR SURPRISE</p>
+                            <p class="text-sm">Ce qu'elle/il ne demandait pas mais découvre qu'elle/il adore = réaction SPÉCIALE</p>
+                        </div>
+                        <div class="bg-slate-700/50 p-4 rounded-lg">
+                            <p class="text-rose-300 font-black mb-2"> QUALITÉ > QUANTITÉ</p>
+                            <p class="text-sm">1 cadeau réfléchi > 3 cadeaux génériques. Elle/il le SENTIRA.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CTA Section -->
+        <div class="mt-16 bg-gradient-to-r from-pink-900 via-slate-900 to-purple-900 rounded-3xl p-12 text-center border-2 border-pink-600">
+            <h3 class="text-3xl font-black text-white mb-4">Pas de réponse à ta question ?</h3>
+            <p class="text-slate-300 font-bold mb-8">Utilise le comparateur pour trouver LE cadeau pendant qu'il est encore temps.</p>
+            <a href="top10.html" class="inline-block bg-gradient-to-r from-pink-600 to-rose-600 text-white px-12 py-4 rounded-2xl font-black text-lg hover:shadow-2xl hover:shadow-pink-600/50 transition-all transform hover:scale-105 uppercase tracking-wide">
+                 VOIR LE TOP 10
+            </a>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black border-t-4 border-pink-600 py-16 mt-20">
+        <div class="max-w-7xl mx-auto px-6">
+            <!-- Main Footer -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                <div>
+                    <h4 class="font-black text-pink-400 mb-6 text-lg">SITE</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-slate-400 hover:text-pink-300 transition text-sm">Accueil</a></li>
+                        <li><a href="top10.html" class="text-slate-400 hover:text-pink-300 transition text-sm">Top 10</a></li>
+                        <li><a href="guide.html" class="text-slate-400 hover:text-pink-300 transition text-sm">Guide</a></li>
+                        <li><a href="faq.html" class="text-slate-400 hover:text-pink-300 transition text-sm">FAQ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-black text-pink-400 mb-6 text-lg">CATÉGORIES</h4>
+                    <ul class="space-y-2">
+                        <li><a href="femme.html" class="text-slate-400 hover:text-pink-300 transition text-sm">Pour Elle</a></li>
+                        <li><a href="homme.html" class="text-slate-400 hover:text-pink-300 transition text-sm">Pour Lui</a></li>
+                        <li><a href="top10.html" class="text-slate-400 hover:text-pink-300 transition text-sm">Top 10</a></li>
+                        <li><a href="derniere-minute.html" class="text-slate-400 hover:text-pink-300 transition text-sm">Urgence</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-black text-pink-400 mb-6 text-lg">INFOS</h4>
+                    <ul class="space-y-2">
+                        <li><a href="pas-cher.html" class="text-slate-400 hover:text-pink-300 transition text-sm">Pas Cher</a></li>
+                        <li><a href="legal.html" class="text-slate-400 hover:text-pink-300 transition text-sm">Mentions Légales</a></li>
+                        <li><a href="#" class="text-slate-400 hover:text-pink-300 transition text-sm">Nous Contacter</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-black text-pink-400 mb-6 text-lg">FOLLOW</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-slate-400 hover:text-pink-300 transition text-sm">Instagram</a></li>
+                        <li><a href="#" class="text-slate-400 hover:text-pink-300 transition text-sm">TikTok</a></li>
+                        <li><a href="#" class="text-slate-400 hover:text-pink-300 transition text-sm">Newsletter</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Divider -->
+            <div class="border-t border-pink-600 pt-8 text-center">
+                <p class="text-slate-500 text-sm mb-4">
+                    © 2026 <span class="text-pink-400 font-black">AMOUR & CADEAUX</span> — Toutes vos questions résolues
+                </p>
+                <p class="text-xs text-slate-600">
+                     Partenaire Amazon | Tests Honnêtes | Cadeaux Garantis
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.min.js"></script>
+    <script>
+        // FAQ Accordion
+        document.querySelectorAll('.faq-toggle').forEach(button => {
+            button.addEventListener('click', function() {
+                const content = this.nextElementSibling;
+                const isOpen = !content.classList.contains('hidden');
+                
+                // Close all
+                document.querySelectorAll('.faq-content').forEach(c => c.classList.add('hidden'));
+                document.querySelectorAll('.faq-toggle span:last-child').forEach(span => span.textContent = '+');
+                
+                // Open clicked
+                if (!isOpen) {
+                    content.classList.remove('hidden');
+                    this.querySelector('span:last-child').textContent = '−';
+                }
+            });
+        });
+    </script>
+    <!--  NEW: Interactive Features Script -->
+    <script src="script-interactive.js"></script>
+</body>
+</html>
