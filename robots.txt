@@ -18,4 +18,4 @@ Disallow: /scripts/
 Crawl-delay: 1
 
 # Sitemap principal
-Sitemap: https://example.com/sitemap.xml
+Sitemap: https://amour-cadeaux.site/sitemap.xml
